@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression Suite</th></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">4</td><td class="num">126,727</td><td>regression</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.testsuite.ComputerTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1670976005397</td><td rowspan="1">21043</td></tr><tr><th colspan="4">Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.testsuite.ComputerTest</td><td><a href="#m1">verifyProductAddedToShoppingCartSuccessFully</a></td><td rowspan="1">1670975933414</td><td rowspan="1">71950</td></tr><tr class="failedodd"><td rowspan="2">com.nopcommerce.testsuite.ElectronicsPageTest</td><td><a href="#m2">verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully</a></td><td rowspan="1">1670976031663</td><td rowspan="1">7</td></tr><tr class="failedodd"><td><a href="#m3">verifyUserShouldNavigateToCellPhonesPageSuccessfully</a></td><td rowspan="1">1670976042340</td><td rowspan="1">0</td></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.testsuite.HomePageTest</td><td><a href="#m4">verifyPageNavigation</a></td><td rowspan="1">1670976048727</td><td rowspan="1">238</td></tr><tr><th colspan="4">Regression Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.nopcommerce.testsuite.ComputerTest</td><td><a href="#m5">verifyProductArrangeInAlphaBaticalOrder</a></td><td rowspan="1">1670976026489</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Regression Test</h2><h3 id="m0">com.nopcommerce.testsuite.ComputerTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=108.0.5359.99)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9571ee4f2ce947c8167ecf81f3b70383, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\iruch\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63277/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9571ee4f2ce947c8167ecf81f3b70383
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
+	at com.nopcommerce.browserfactory.ManageBrowser.selectBrowser(ManageBrowser.java:32)
+	at com.nopcommerce.testbase.BaseTest.setUp(BaseTest.java:14)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.testsuite.ComputerTest#verifyProductAddedToShoppingCartSuccessFully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Click on Desktop[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> link text: Desktops]<br/>Select by nameName: A to Z to name field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> name: products-orderby]<br/>Click on Element[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //body/div[6]/div[3]/div[1]/div[3]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/button[1]]<br/>Verify Text Build your own computer [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //h1[contains(text(),'Build your own computer')]]<br/>select processor 1 to select processor field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> name: product_attribute_1]<br/>Select Ram5 select ram field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> name: product_attribute_2]<br/>Select HDD Radio Button[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //input[@id='product_attribute_3_7']]<br/>Select OS Vista Primium[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //input[@id='product_attribute_4_9']]<br/>Select Software [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //input[@id='product_attribute_5_12']]<br/>Verify Price[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //span[text() = '$1,475.00']]<br/>Click on Addcart Button[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[@id='add-to-cart-button-1']]<br/>Verify message on greenbar[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //body[1]/div[5]/div[1]/p[1]]<br/>Click on closebar[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //body[1]/div[5]/div[1]/span[1]]<br/>Mouse hoover on shopping cart[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //span[contains(text(),'Shopping cart')]]<br/>Click on shopping cart[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[contains(text(),'Go to cart')]]<br/>Verify shopping cart text: [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //div[@class='page-title']/h1[contains(text(),'Shopping cart')]]<br/>Update quantity <br/>Update shopping cart: [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[@id='updatecart']]<br/>Verify the total price: [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //span[@class='product-subtotal'][text()='$2,950.00']]<br/>Click on the checkbox to accept terms:[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: termsofservice]<br/>Click on checkout button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[@id='checkout']]<br/>Verify welcome text[[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //h1[text()='Welcome, Please Sign In!']]<br/>Click on As guest button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[text()= 'Checkout as Guest']]<br/>Enter First name Rashi to firstname field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_FirstName]<br/>Enter Lastname Vegad to lastname field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_LastName]<br/>Enter Email rashi@example.com to Email field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_Email]<br/>Enter Country 233 to country field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_CountryId]<br/>Enter StateField 0 to State field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_StateProvinceId]<br/>Enter city London to city field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_City]<br/>Enter Address 4,Down Street to Address field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_Address1]<br/>Enter Zipcode W4 2AB to Zipcode field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_ZipPostalCode]<br/>Enter PhoneNumber 4567395116994 to Phonenumber field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: BillingNewAddress_PhoneNumber]<br/>Click on checkout Button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //div[1]/button[4]]<br/>Click on radio button for next day air shipping: [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: shippingoption_1]<br/>Click on continue button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //body/div[6]/div[3]/div[1]/div[1]/div[1]/div[2]/ol[1]/li[3]/div[2]/form[1]/div[2]/button[1]]<br/>Click on credit card [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> css selector: #paymentmethod_1]<br/>Click on continue button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //ol[1]/li[4]/div[2]/div[1]/button[1]]<br/>Enter the cardholder name in name field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: CardholderName]<br/>Enter the card number in number field [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: CardNumber]<br/>Select the expiry month from list [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: ExpireMonth]<br/>Select the expiry year from list [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: ExpireYear]<br/>Enter card code [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> id: CardCode]<br/>Click on continue button [[ChromeDriver: chrome on WINDOWS (07a036c711107cdbb6f82a317d132ad5)] -> xpath: //button[@class='button-1 payment-info-next-step-button']]<br/>Verify credit card payment methodProxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'Credit Card')]'</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Credit Card&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07a036c711107cdbb6f82a317d132ad5, findElement {using=xpath, value=//span[contains(text(),&apos;Credit Card&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\iruch\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62899/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 07a036c711107cdbb6f82a317d132ad5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.nopcommerce.utility.Utility.getTextFromElement(Utility.java:65)
+	at com.nopcommerce.pages.ConfirmOrderPage.VerifyCreditCardPaymentMethod(ConfirmOrderPage.java:35)
+	at com.nopcommerce.testsuite.ComputerTest.verifyProductAddedToShoppingCartSuccessFully(ComputerTest.java:98)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.testsuite.ElectronicsPageTest#verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.nopcommerce.testsuite.ElectronicsPageTest.verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully(ElectronicsPageTest.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.nopcommerce.testsuite.ElectronicsPageTest#verifyUserShouldNavigateToCellPhonesPageSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.nopcommerce.testsuite.ElectronicsPageTest.verifyUserShouldNavigateToCellPhonesPageSuccessfully(ElectronicsPageTest.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.nopcommerce.testsuite.HomePageTest#verifyPageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.nopcommerce.testsuite.HomePageTest.verifyPageNavigation(HomePageTest.java:20)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.nopcommerce.testsuite.ComputerTest#verifyProductArrangeInAlphaBaticalOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=108.0.5359.99)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9571ee4f2ce947c8167ecf81f3b70383, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\iruch\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63277/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9571ee4f2ce947c8167ecf81f3b70383
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
+	at com.nopcommerce.browserfactory.ManageBrowser.selectBrowser(ManageBrowser.java:32)
+	at com.nopcommerce.testbase.BaseTest.setUp(BaseTest.java:14)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
